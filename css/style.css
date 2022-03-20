@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+  margin: 0 auto;
+  color: #3f464d;
+  font-family: "Spoqa Han Sans Neo", "Sans-serif";
+}
+
+/* a reset*/
+a {
+  all: unset;
+}
+a:link {
+  text-decoration: none;
+  color: #3f464d;
+}
+a:visited {
+  text-decoration: none;
+  color: #3f464d;
+}
+a:active {
+  text-decoration: none;
+  color: #3f464d;
+}
+a:hover {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+.inner {
+  width: 100%; 
+  height: 100%; 
+  margin: 0 auto; 
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.head-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-container .head-brand {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.head-container .head-brand a:hover {
+  color: #2186c4;
+  cursor: pointer;
+}
+
+.head-container .head-blog {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.head-container .head-blog a:hover {
+  color: #2186c4;
+  cursor: pointer;
+}
+
+section {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+.main {
+    height: 360px;
+    background-image: url(/img/web-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 10%;
+    z-index: 1;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(47, 48, 89);
+    opacity: 0.8;
+    z-index: 2;
+    margin-top: 60px;
+}
+
+.title-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+
+.message {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #fff;
+    line-height: 2rem;
+}
+
+.skill-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.skill {
+    width: 25%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+    transition: 0.4s;
+}
+
+.skill:hover {
+    transform: translate(0, -7px);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin: 0 10px;
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #3f464d;
+    margin-bottom: 0.2rem;
+}
+
+.skill-des {
+    font-size: 0.9rem;
+    color: #3f464d;
+}
+
+.coding {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.coding-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coding-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #3f464d;
+}
+
+.slide-prev {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.slide-next {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(224, 222, 222);
+}
+
+.arrow-container {
+    display: flex;
+}
+
+.coding-list {
+    display: flex;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.coding-card {
+    width: 150px;
+    height: 150px;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+    border-radius: 8px;
+    margin: 0 13px;
+    transition: 0.4s;
+    flex-shrink: 0;
+}
+
+.coding-card:hover {
+    box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, 0.2);
+    transform: translate(0, -7px);
+}
+
+.coding-img {
+    max-width: 150px;
+    border-radius: 10px;
+    /* height: 150px; */
+}
+
+li {
+    cursor: pointer;
+}
+
+footer {
+    border-top: 1px solid #e4e4e4;
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.footer-message {
+    font-weight: bold;
+    margin: 0.4rem 0.5rem;
+    color: #545e6f;
+}
+
+.footer-submessage {
+    font-weight: lighter;
+    margin: 0.8rem 0.5rem;
+    color: #545e6f;
+}
+
+.footer-submessage span {
+    color: #2186c4;
+    font-weight: 900;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .inner{
+        max-width: 1200px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .skill-container {
+        display: none;
+    }
+    footer {
+        font-size: 0.7rem;
+        word-break: keep-all;
+    }
+}
+  
