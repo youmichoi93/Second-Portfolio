@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+  display: flex;
+}
+
+nav li{
+  background: #262626;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  list-style: none;
+  width: 150px;
+  height: 50px;
+  margin: 0 20px;
+  transition: .7s;
+  cursor: pointer;
+  font-family: lato;
+}
+
+nav li:hover{
+  background: darkmagenta;
+  box-shadow: 0 0 0 8px #fff,
+              0 0 0 12px darkmagenta;
+} 

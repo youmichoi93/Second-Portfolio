@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Blake's tab</title>
+      <!-- jQuery CDN -->
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <div class="saying">
+          <h1><span>Henry Lau</span> Canadian singer, songwriter, musician, record producer, and actor based in South Korea and China. </h1>
+          <div class="saying-face">
+              <img class="active" src="img/face-01.jpg" data-alt="tab1" alt="가수얼굴이미지입니다.">
+              <img src="img/face-02.jpg" data-alt="tab2"  alt="가수얼굴이미지입니다.">
+              <img src="img/face-03.jpg" data-alt="tab3"  alt="가수얼굴이미지입니다.">
+              <img src="img/face-04.jpg" data-alt="tab4"  alt="가수얼굴이미지입니다.">
+         </div>
+         <div class="saying-content">
+             <div class="saying-content-tab active" id="tab1">
+                 <p>
+                   He debuted in 2008 as a member of Super Junior-M and launched his solo career in 2013 with Trap. His original soundtrack "It's You" released in 2017 became the most streamed Korean OST on Spotify for two consecutive years in 2018 and 2019.
+                 </p>
+                 <b>singer</b>
+             </div>
+             <div class="saying-content-tab" id="tab2">
+                 <p>
+                   In 2018, Henry left SM Entertainment following the expiration of his contract, and subsequently joined Monster Entertainment Group.</p>
+                 <b>songwriter</b>
+             </div>
+             <div class="saying-content-tab" id="tab3">
+                 <p>
+                  Henry is a multi-instrumentalist and plays the violin, piano, drums, and guitar.He is known for his performance style which often involves the use of multiple instruments and loop pedals during live performances.He has been nicknamed "one-man band" by Chinese netizens after a viral performance at the Zhejiang TV Autumn Festival in 2019, during which he performed using live looping and played drum pads, a glass bottle, kick drum, marimba, piano, and electric violin while singing.
+                 </p>
+                 <b>musician</b>
+             </div>
+             <div class="saying-content-tab" id="tab4">
+                 <p>
+                   Henry made his Hollywood debut in 2019 with the film A Dog's Journey produced by Amblin Entertainment.In 2020, he starred in the action-fantasy movie Double World.The film was released on Netflix and the Chinese streaming service iQIYI,becoming the first movie produced in Mainland China to have a simultaneous global release.
+                 </p>
+                 <b>actor</b>
+             </div>
+         </div>
+       </div>
+
+      <script>
+      $('.saying-content-tab').hide().eq(0).show()
+        $('.saying-face img').click(function(){
+          $(this).addClass('active')
+          $(this).siblings().removeClass('active')
+          
+          $('.saying-content-tab').fadeOut()
+          $('#' + $(this).attr('data-alt')).fadeIn()
+        })
+      </script>
+  </body>
+</html>

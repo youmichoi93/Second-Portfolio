@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Blake's navigation-3</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <!-- FontAwesome CDN 4.7  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+      <!-- jQuery CDN -->
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+
+  <body>
+      <nav>
+          <ul>
+              <li><a href="https://facebook.com">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Work</a></li>
+          </ul>
+          <div class="button">
+              <a class="btn-open" href="#"></a>
+         </div>
+      </nav>
+      <div class="overlay">
+          <div class="wrap">
+              <ul class="wrap-nav">
+                  <li><a href="#">About</a>
+                    <ul>
+                        <li><a href="#">About Company</a></li>
+    				    <li><a href="#">Designers</a></li>
+    				    <li><a href="#">Developers</a></li>
+    				    <li><a href="#">Pets</a></li>
+    			    </ul>
+                  </li>
+    			  <li><a href="#">Services</a>
+                    <ul>
+    				    <li><a href="https://www.google.hr/">Web Design</a></li>
+    				    <li><a href="#">Development</a></li>
+    				    <li><a href="#">Apps</a></li>
+    				    <li><a href="#">Graphic design</a></li>
+    				    <li><a href="#">Branding</a></li>
+    		  	   </ul>
+                  </li>
+    			  <li><a href="#">Work</a>
+                    <ul>
+                        <li><a href="#">Web</a></li>
+    				    <li><a href="#">Graphic</a></li>
+    				    <li><a href="#">Apps</a></li>
+    		    	</ul>
+    		      </li>
+              </ul>
+              <div class="social">
+                  <a href="http://mario-loncarek.from.hr/">
+                      <div class="social-icon">
+                          <i class="fa fa-facebook"></i>
+  		      	      </div>
+  		          </a>
+  		          <a href="#">
+                      <div class="social-icon">
+                          <i class="fa fa-twitter"></i>
+                      </div>
+  	    	      </a>
+  			      <a href="#">
+                        <div class="social-icon">
+                            <i class="fa fa-codepen"></i>
+  		          	    </div>
+  			      </a>
+  			      <a href="#">
+                        <div class="social-icon">
+                            <i class="fa fa-behance"></i>
+  			           </div>
+  			      </a>
+  			      <a href="#">
+                  <div class="social-icon">
+                      <i class="fa fa-dribbble"></i>
+  	    	      </div>
+  		      	  </a>
+              </div>
+          </div>
+      </div>
+      <div class="content">Click on hamburger to open the overlay menu</div>
+  
+      <script>
+      $(document).ready(function(){
+        $(".button a").click(function(){
+          $(".overlay").fadeToggle(200);
+          $(this).toggleClass('btn-open').toggleClass('btn-close');
+          });
+        });  
+       $('.overlay').on('click', function(){
+          $(".overlay").fadeToggle(200);   
+          $(".button a").toggleClass('btn-open').toggleClass('btn-close');
+          open = false;
+        });
+       </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Blake's tab</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <!-- Tab-section -->
+    <div class="tab-section">
+        <div class="heading">
+             <h1><span>My Favorite Animal</span> Hello there, we are the Quokkas !</h1>
+             <input type="text" placeholder="What are you looking for? 👀 ">
+        </div> 
+    <!-- Tab-btn -->
+    <ul class="tab-btn">
+        <li class="active" data-alt="tab1">1</li>
+        <li data-alt="tab2">2</li>
+        <li data-alt="tab3">3</li>
+        <li data-alt="tab4">4</li>
+        <li data-alt="tab5">5</li>
+    </ul>
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab active" id="tab1">
+           <h2>1</h2>
+           <div class="flex">
+               <img src="img/Quokkas-01.png" alt="Quokka">
+               <p>
+                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, officia quos perferendis est quo sapiente pariatur, iusto possimus cum eos excepturi quod amet asperiores illo distinctio, incidunt assumenda at itaque.
+               </p>
+          </div>
+        </div>
+        <div class="tab" id="tab2">
+            <h2>2</h2>
+            <div class="flex">
+            <img src="img/Quokkas-02.png" alt="Quokka">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, officia quos perferendis est quo sapiente pariatur, iusto possimus cum eos excepturi quod amet asperiores illo distinctio, incidunt assumenda at itaque.
+
+            </p>
+            </div>
+        </div>
+        <div class="tab" id="tab3">
+            <h2>3</h2>
+            <div class="flex">
+            <img src="img/Quokkas-03.png" alt="Quokka">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, officia quos perferendis est quo sapiente pariatur, iusto possimus cum eos excepturi quod amet asperiores illo distinctio, incidunt assumenda at itaque.
+            </p>
+            </div>
+        </div>
+        <div class="tab" id="tab4">
+            <h2>4</h2>
+            <div class="flex">
+                <img src="img/Quokkas-04.png" alt="Quokka">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, officia quos perferendis est quo sapiente pariatur, iusto possimus cum eos excepturi quod amet asperiores illo distinctio, incidunt assumenda at itaque.
+                </p>
+            </div>
+       </div>
+       <div class="tab" id="tab5">
+           <h2>5</h2>
+           <div class="flex">
+               <img src="img/Quokkas-05.png" alt="Quokka">
+               <p>
+                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, officia quos perferendis est quo sapiente pariatur, iusto possimus cum eos excepturi quod amet asperiores illo distinctio, incidunt assumenda at itaque.
+               </p>
+           </div>
+       </div>
+    </div>
+    </div>
+    
+    <script>
+    $('.tab-btn li').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+  
+      $('.tabs .tab').removeClass('active')
+      $('#'+$(this).attr('data-alt')).addClass('active')
+    })
+    </script>
+  </body>
+</html>

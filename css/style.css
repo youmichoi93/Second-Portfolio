@@ -29,6 +29,37 @@ a:hover {
   color: #3f464d;
 }
 
+/* wow.js */
+.ttb {
+    animation: ttb 2s linear both;
+}
+
+.btt {
+    animation: btt 1s linear both;
+}
+
+@keyframes ttb {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes btt {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .inner {
   width: 100%; 
   height: 100%; 
@@ -189,7 +220,7 @@ section {
 }
 
 .skill {
-    width: 25%;
+    width: 250px;
     min-height: 250px;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -212,12 +243,6 @@ section {
     margin: 0 10px;
 }
 
-.skill-title {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
 .icons {
     text-align: center;
     font-size: 2rem;
@@ -228,6 +253,7 @@ section {
     color: #3f464d;
     text-align: center;
     padding: 1rem 0.5rem;
+    font-size: 0.8rem;
 }
 
 .skill-des {
@@ -241,6 +267,10 @@ section {
 .coding {
     width: 100%;
     margin-top: 2rem;
+}
+
+.coding:last-child {
+    margin-bottom: 8rem;
 }
 
 .coding-title-container {
@@ -313,8 +343,90 @@ section {
 }
 
 /* coding ends */
-/* footer */
+/* website starts */
+.dimension {
+    width: 300px;
+    height: 300px;
+}
 
+.nav-tabs .nav-link.active {
+    background-color: #2186c4;
+    color: #fff;
+    border: 3px solid #2186c4;
+}
+
+.nav-tabs .nav-link {
+    background-color: #fff;
+    color: #2186c4;
+    border: 3px solid #2186c4;
+    margin-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.nav-tabs .nav-link:hover {
+    border: 3px solid #2186c4;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #2186c4;
+}
+
+.tab-content {
+    padding: 20px;
+    margin-bottom: 7rem;
+}
+
+.w-btn {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.25s;
+}
+
+.w-btn:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn-gra3 {
+    background: linear-gradient(
+        45deg,
+        #D1D59F,
+        #B3C79D,
+        #62A7AF,
+        #5C5B81,
+        #745669,
+        #B694B4
+    );
+    color: white;
+}
+
+.w-btn-gra-anim {
+    background-size: 400% 400%;
+    animation: gradient1 5s ease infinite;
+}
+
+@keyframes gradient1 {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* website ends */
+/* footer */
 li {
     cursor: pointer;
 }
@@ -411,3 +523,21 @@ footer {
     
 }
   
+ /* IE10+ */
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .skill {
+        max-width: 200px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        padding: 1.5rem 2rem;
+        margin: 0px 0.5rem;
+        flex-wrap: wrap;
+        border: 1px solid rgb(51, 51, 51);
+        transition: all 0.4s ease 0s;
+    }
+    .skill-container {
+        margin-top: 120px;
+        min-height: 350px;
+    }
+ }

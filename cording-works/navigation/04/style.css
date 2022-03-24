@@ -1,0 +1,130 @@
+
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+body{
+  margin: 0;
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: #222;
+  line-height: 1.6em;
+  background-color: #f4f4f4;
+  font-weight: 300;
+}
+
+.tab-section{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.heading{
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.heading h1{
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.heading h1 span{
+  color: #BF5F04;
+}
+
+/* Search */
+.heading input[type=text]{
+  padding: 15px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  padding-left: 10px;
+  background: #fff url(img/search-icon.svg) no-repeat center left 10px;
+  background-size: 23px;
+}
+
+.heading input[type=text] ::placeholder{
+  font-style: italic;
+  color: #999;
+  transition: 0.3s;
+}
+
+.heading input[type=text] :focus ::placeholder{
+ opacity: 0;
+ visibility: hidden;
+}
+
+/* Tab Button */
+.tab-btn{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.tab-btn li{
+  float: left;
+  width: 120px;
+  text-align: center;
+  padding: 7px;
+  background-color: #eee;
+  border-right: 1px solid #ddd;
+  border-top: 2px solid transparent;
+  cursor: pointer;
+}
+
+.tab-btn li:hover{
+  background-color: #fff;
+  border-top: 2px solid #F5BD65;
+}
+
+.tab-btn li:nth-child(3):hover,
+.tab-btn li:nth-child(4):hover{
+  border-top: 2px solid #04C2A2;
+}
+
+.tab-btn li:last-child:hover{
+  border-right: none;
+  width: 120px;
+  border-top: 2px solid #67A4F5;
+}
+
+.tabs{
+  border: 1px solid #ddd;
+  border-top: none;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.tab{
+  display: none;
+}
+
+.tab.active{
+  display: block;
+}
+
+.tab h2{
+  font-size: 26px;
+  text-align: center;
+}
+
+.flex{
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  align-items:center;
+}
+
+img{
+  margin-right: 20px;
+}
+
+
