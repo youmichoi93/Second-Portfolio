@@ -38,6 +38,11 @@ a:hover {
     animation: btt 1s linear both;
 }
 
+.slide {
+    animation: slide 1s linear both;
+
+}
+
 @keyframes ttb {
     0% {
         opacity: 0;
@@ -59,6 +64,18 @@ a:hover {
         transform: translateY(0);
     }
 }
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 .inner {
   width: 100%; 
@@ -349,6 +366,10 @@ section {
     height: 300px;
 }
 
+.col-auto img {
+    border: none;
+}
+
 .nav-tabs .nav-link.active {
     background-color: #2186c4;
     color: #fff;
@@ -496,13 +517,12 @@ footer {
 
 
 
-@media only screen and (min-width: 1200px) {
+@media all and (min-width: 1200px) {
     .inner{
         max-width: 1200px;
-    }
+    }   
 }
-
-@media only screen and (max-width: 980px) {
+@media all and (min-width: 1024px) {
     .head-container .head-brand{
         font-size: 0.8em;
     }
@@ -510,18 +530,68 @@ footer {
         font-size: 0.5em;
         font-weight: lighter;
     }
-    .title-container {
-        display: none;
-    }
-    .skill-container {
-        display: none;
-    }
     footer {
         font-size: 0.7rem;
         word-break: keep-all;
     }
-    
 }
+@media all and (min-width: 768px)and (max-width:1023px) {
+    .skill-container {
+        display: none;
+    }
+    .title-container {
+        display: none;
+    }
+    #website .container {
+        max-width: 900px;
+    }
+    #website .container .nav {
+        flex-wrap: nowrap;
+    }
+    #website .container .nav-item {
+        padding: 0;
+    }
+    #website .container .nav-link {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+    .dimension {
+        width: auto;
+    }
+    #website .container .nav-link {
+        font-size: 0.7rem;
+        padding: 2px;
+    }
+}
+@media all and (max-width: 767px) {
+    .skill-container {
+        display: none;
+    }
+    .title-container {
+        display: none;
+    }
+    #website .container {
+        max-width: 600px;
+    }
+    #website .container .nav {
+        flex-wrap: nowrap;
+    }
+    #website .container .nav-item {
+        padding: 0;
+    }
+    #website .container .nav-link {
+        font-size: 0.7rem;
+        padding: 2px;
+    }
+    .dimension {
+        width: auto;
+    }
+    .tab-content .col .p-4 {
+        font-size: 0.5rem;
+    }
+}
+
+
   
  /* IE10+ */
  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Blake's complete web</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- slick slider -->
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  </head>
+  <body>
+      <header>
+          <div class="container">
+              <div class="navbar">
+                  <div class="logo"><a href="./index.html"><img src="img/logo.png" width="90px" alt="로고입니다."></a></div>
+                  <nav>
+                      <ul id="MenuItems">
+                          <li><a href="./index.html">Home</a></li>
+                          <li><a href="./detail.html">Products</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Contact</a></li>
+                          <li><a href="#">Account</a></li>
+                      </ul>
+                  </nav>
+                  <img src="./img/bag.png" width="30px" height="30px" alt="장바구니아이콘입니다.">
+                  <img src="./img/toggle.png" class="menu-icon" onclick="menuToggle()" alt="메뉴버튼이미지입니다.">
+              </div>
+          </div>
+      </header>
+      <!-- single detail -->
+      <div class="small-container sigle-product">
+          <div class="row">
+              <div class="col-2">
+                  <img src="./img/detail-plant.png" width="100%" id="ProductImg" alt="상세이미지입니다.">
+
+                  <div class="small-img-row">
+                      <div class="small-img-col">
+                          <img src="./img/detail-plant (1).png" class="small-img" width="100%" alt="상세이미지입니다.">
+                          <img src="./img/detail-plant (2).png" class="small-img" width="100%" alt="상세이미지입니다.">
+                          <img src="./img/detail-plant (3).png" class="small-img" width="100%" alt="상세이미지입니다.">
+                          <img src="./img/detail-plant (4).png" class="small-img" width="100%" alt="상세이미지입니다.">
+                      </div>
+                  </div>
+              </div>
+              <div class="col-2">
+                  <p>식물 / FRP 화분 대형식물 5종</p>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h1><span>3%</span> 75,000원 외</h1>
+                  <h4>배송</h4>
+                  <select>
+                    <option value="" selected>상품을 선택하세요.</option>
+                      <option>화분 대형식물 소피아 고무나무 실내공기정화식물 대형화분</option>
+                      <option>화분 대형식물 크로톤 실내공기정화식물 대형화분</option>
+                      <option>화분 대형식물 아레카야자 (120cm~) 실내공기정화식물 대형화분</option>
+                      <option>화분 대형식물 몬스테라 실내공기정화식물 대형화분</option>
+                      <option>뱅갈고무나무_경량시멘트 대형 사각화분 실내공기정화식물</option>
+                  </select>
+                  <input type="number" value="1">
+                  <a href="" class="btn">장바구니</a>
+                  <h3>아침향기</h3>
+              </div>
+          </div>
+      </div>
+      <!-- products -->
+      <section class="products">
+          <div class="small-container">
+              <div class="title">
+                  <h2>식물</h2>
+              </div>
+              <div class="row">
+                   <div class="col-4 wow ttb">
+                       <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/deals/163160309454876491.jpg?gif=1&w=640&h=640&c=c&q=0.8" alt="식물상품사진입니다.">
+                       <h4>관엽식물 특대형_화분세트</h4>
+                       <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                       </div>
+                       <p>45000원</p>
+                   </div>
+                   <div class="col-4 wow ttb">
+                      <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/162545784807949008.jpeg?gif=1&w=640&h=640&c=c&q=0.8" alt="식물상품사진입니다.">
+                      <h4>테라조 화분(세트)_3sizes</h4>
+                      <div class="rating">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                      </div>
+                      <p>55000원</p>
+                  </div>
+                  <div class="col-4 wow ttb">
+                      <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/162582040254256102.jpg?gif=1&w=640&h=640&c=c&q=0.8" alt="식물상품사진입니다.">
+                      <h4>오렌지 쟈스민 + 독일토분</h4>
+                      <div class="rating">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                      </div>
+                      <p>85000원</p>
+                  </div>
+                  <div class="col-4 wow ttb">
+                      <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/163299115981550814.jpg?gif=1&w=640&h=640&c=c&q=0.8" alt="식물상품사진입니다.">
+                      <h4>클린디퓨져 식물 조화</h4>
+                      <div class="rating">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                      </div>
+                      <p>35000원</p>
+                  </div>
+               </div>
+           </div>
+        </section>
+   
+   
+        <!-- footer -->
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>앱 다운받기</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="footer-col-2">
+                       <img src="./img/heart.png" alt="로고이미지입니다.">
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. similique voluptas </p>
+                   </div>
+                   <div class="footer-col-3">
+                       <h3>Contact</h3>
+                       <ul>
+                           <li>lorem</li>
+                           <li>lorem</li>
+                           <li>lorem</li>
+                           <li>lorem</li>
+                       </ul>
+                   </div>
+                   <div class="footer-col-4">
+                       <h3>Contact</h3>
+                       <ul>
+                           <li>Facebook</li>
+                           <li>Twitter</li>
+                           <li>Instagram</li>
+                           <li>Youtube</li>
+                       </ul>
+                   </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- gallery -->
+        <script>
+            var ProductImg = document.getElementById("ProductImg");
+            var SmallImg = document.getElementsByClassName("small-img");
+  
+              SmallImg[0].onclick = function() {
+                  ProductImg.src = SmallImg[0].src;
+              }
+              SmallImg[1].onclick = function() {
+                  ProductImg.src = SmallImg[1].src;
+              }
+              SmallImg[2].onclick = function() {
+                  ProductImg.src = SmallImg[2].src;
+              }
+              SmallImg[3].onclick = function() {
+                  ProductImg.src = SmallImg[3].src;
+              }
+        </script>
+        <!-- toggle -->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight = "0px";
+    
+            function menuToggle() {
+                if(MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                }else{
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>
